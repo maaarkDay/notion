@@ -1,13 +1,15 @@
-<div align="center" >
-    <img align="center" width="400" src="https://user-images.githubusercontent.com/30710565/191823101-ba2f21e4-db57-403b-b503-35815606c65d.png">
-    <div style="margin-left:30px">
-        <h2 > <b>Notion&nbsp</b>is an Amazing<b>&nbspFinance Tracker</b><br></h3>
-        <sub>
-            You're already tracking everything else in your life there.<br>
-            Why not your finances, minus the tedious manual entry?
-        </sub>
-    </div>
-</div>
+<p align="center">
+    <img width="400" src="https://user-images.githubusercontent.com/30710565/191823101-ba2f21e4-db57-403b-b503-35815606c65d.png">
+</p>
+<p align="center">
+    <b>Notion&nbsp</b>is an amazing<b>&nbspFinance Tracker</b><br>
+    <sub>
+        You're already tracking everything else in your<br>
+        life there. Why not your finances, without the<br>
+        manual entry? Now you can with 🔩 <b>Bolt On</b>.
+    </sub> 
+</p>
+
 
 <p align="center">
   <img src="https://github.com/amplication/amplication/workflows/Node.js%20CI/badge.svg" alt="Node.js CI">
