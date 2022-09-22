@@ -36,4 +36,4 @@ You can get started with Bolt On immediately by creating a new integration with 
 - https://www.notion.so/my-integrations
 - Create a new integration (Make sure you are the Admin!)
 - Make sure Read, Update and Insert are all checked under **Content Capabilities**
-- Email me here 👉 mark@markday.me
+- Email me here 👉 mark@markday.me and I'll get you setup!
