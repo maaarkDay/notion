@@ -1,11 +1,11 @@
-<div style="display:flex;">
-    <img style="float:right" width="100" src="https://raw.githubusercontent.com/maaarkDay/notion/master/notion-logo-dark.svg#gh-light-mode-only">
+<div style="display:flex; justify-content: center" >
+    <img width="100" src="https://raw.githubusercontent.com/maaarkDay/notion/master/notion-logo-dark.svg#gh-light-mode-only">
     <img width="100" src="https://raw.githubusercontent.com/maaarkDay/notion/master/notion-logo-light.svg#gh-dark-mode-only">
-    <div>
-        <p style="padding-left:30px"> <b>Notion&nbsp</b>is an amazing<b>&nbspFinance Tracker</b><br>
-            You're already tracking everything else<br> 
-            in your life there. Why not your finances<br> 
-            minus the tedious manul entry?
+    <div style="margin-left:30px">
+        <h2 > <b>Notion&nbsp</b>is an Amazing<b>&nbspFinance Tracker</b><br></h3>
+        <p>
+            You're already tracking everything else in your life there.<br>
+            Why not your finances minus the tedious manual entry?
         </p>
     </div>
 </div>
