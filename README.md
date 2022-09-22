@@ -1,31 +1,23 @@
-<div style="display:flex; justify-content: center" >
-    <img width="100" src="https://raw.githubusercontent.com/maaarkDay/notion/master/notion-logo-dark.svg#gh-light-mode-only">
-    <img width="100" src="https://raw.githubusercontent.com/maaarkDay/notion/master/notion-logo-light.svg#gh-dark-mode-only">
+<div align="center" >
+    <img align="center" width="400" src="https://user-images.githubusercontent.com/30710565/191823101-ba2f21e4-db57-403b-b503-35815606c65d.png">
     <div style="margin-left:30px">
         <h2 > <b>Notion&nbsp</b>is an Amazing<b>&nbspFinance Tracker</b><br></h3>
-        <p>
+        <sub>
             You're already tracking everything else in your life there.<br>
             Why not your finances, minus the tedious manual entry?
-        </p>
+        </sub>
     </div>
 </div>
 
-
-
 <p align="center">
   <img src="https://github.com/amplication/amplication/workflows/Node.js%20CI/badge.svg" alt="Node.js CI">
-  <a href="CODE_OF_CONDUCT.md">
-    <img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant">
-  </a>
   <a href="https://opensource.org/licenses/Apache-2.0">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
   </a>
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/maaarkDay/notion?color=purple"/>
 </p>
 
-
-
-![screenshot](https://user-images.githubusercontent.com/30710565/191767962-a86a5be6-ca76-4755-b045-0ebca730475c.png)
+![screen_shot](https://user-images.githubusercontent.com/30710565/191823402-3020ce4a-6d3e-4f3a-b2ec-796702698c4e.png)
 
 This integration auto-fetches crypto and stock data daily so you can finally track your finances in Notion.
 
@@ -35,3 +27,11 @@ This integration auto-fetches crypto and stock data daily so you can finally tra
 - [x] Daily stock price updates
 - [x] Daily crypto price updates
 - [x] Finance page template including account summary :tada:
+
+# Getting Started
+
+You can get started with Bolt On immediately by creating a new integration with your Notion account here 👇
+- https://www.notion.so/my-integrations
+- Create a new integration (Make sure you are the Admin!)
+- Make sure Read, Update and Insert are all checked under **Content Capabilities**
+- Email me here 👉 mark@markday.me
