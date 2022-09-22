@@ -10,6 +10,8 @@
     </div>
 </div>
 
+
+
 <p align="center">
   <img src="https://github.com/amplication/amplication/workflows/Node.js%20CI/badge.svg" alt="Node.js CI">
   <a href="CODE_OF_CONDUCT.md">
@@ -26,3 +28,10 @@
 ![screenshot](https://user-images.githubusercontent.com/30710565/191767962-a86a5be6-ca76-4755-b045-0ebca730475c.png)
 
 This integration auto-fetches crypto and stock data daily so you can finally track your finances in Notion.
+
+# Features
+
+🔩 **Bolt On** provides the following features:
+- [x] Daily stock price updates
+- [x] Daily crypto price updates
+- [x] Finance page template including account summary :tada:
