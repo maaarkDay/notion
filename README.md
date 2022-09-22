@@ -5,7 +5,7 @@
         <h2 > <b>Notion&nbsp</b>is an Amazing<b>&nbspFinance Tracker</b><br></h3>
         <p>
             You're already tracking everything else in your life there.<br>
-            Why not your finances minus the tedious manual entry?
+            Why not your finances, minus the tedious manual entry?
         </p>
     </div>
 </div>
