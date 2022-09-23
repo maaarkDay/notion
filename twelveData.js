@@ -30,7 +30,7 @@ const getCurrentPrices = async(tickers = []) => {
 		)
 
 		Object.keys(data).forEach(key => {
-			if(key == "price") prices.push([ symbols, Number(data.price)])
+			if(key == "price") prices.push([symbols, Number(data.price)])
 			else prices.push([key, Number(data[key].price)])
 		})
 
