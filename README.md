@@ -14,7 +14,7 @@
 <p align="center">
   <img src="https://github.com/amplication/amplication/workflows/Node.js%20CI/badge.svg" alt="Node.js CI">
   <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
   </a>
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/maaarkDay/notion?color=purple"/>
 </p>
