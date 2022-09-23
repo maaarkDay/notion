@@ -12,7 +12,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/maaarkDay/notion/actions/workflows/main.yml/badge.svg" alt="Issue Assignment">
+  <img src="https://github.com/maaarkDay/notion/actions/workflows/main.yml/badge.svg" alt="Node.js CI">
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
   </a>
