@@ -1,15 +1,9 @@
-// TODO
-// Remove axios dependency
 const axios = require('axios')
 const { logger, delay } = require('./utils')
-const baseUrl = "https://api.twelvedata.com"
-// const headers = { headers: {
-// 	Authorization: `${process.env.TWELVE_DATA_API_KEY}`	
-// 	}
-// }
+const API_KEY = process.env.STOCKS_API_KEY
+const BASE_URL = process.env.STOCKS_BASE_URL
 
-
-// The free tier of Twelve data only allows for 8 credits/minute,
+// The free tier of stocks API only allows for 8 credits/minute,
 // each ticker = 1 api credit, so we can only pass in 8 at a time,
 // each minute. For $29/mo we get 55 api credits as of 8/25/2022
 const getCurrentPrices = async(tickers = []) => {
@@ -25,7 +19,7 @@ const getCurrentPrices = async(tickers = []) => {
 
 		const symbols = String(tickers.slice(LIMIT*i, LIMIT*(i+1)))
 		const { data } = await axios.get(
-			`${baseUrl}/price?symbol=${symbols}&apikey=${process.env.TWELVE_DATA_API_KEY}`,
+			`${BASE_URL}/price?symbol=${symbols}&apikey=${API_KEY}`,
 			// headers
 		)
 

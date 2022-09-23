@@ -1,11 +1,15 @@
+require('dotenv').config()
 const notion = require('./notion')
-const coinMarketCap = require('./coinMarketCap')
-const twelveData = require('./twelveData')
+const crypto = require('./crypto')
+const stocks = require('./stocks')
 const { logger } = require('./utils')
 const router = Object.freeze({
-	crypto: coinMarketCap.getCurrentPrices,
-	stocks: twelveData.getCurrentPrices
+	crypto: crypto.getCurrentPrices,
+	stocks: stocks.getCurrentPrices
 })
+const ENVIRONMENT = process.env.NODE_ENV
+const NOTION_PARENT_PAGE_ID = process.env.NOTION_PARENT_PAGE_ID
+
 
 /**
  *
@@ -26,7 +30,7 @@ exports.lambdaHandler = async (event, context) => {
 
 	try {
         // Get supported Notion databases on parent page
-		const databases = await notion.getDatabases(process.env.NOTION_PARENT_PAGE_ID)
+		const databases = await notion.getDatabases(NOTION_PARENT_PAGE_ID)
 
 		// Update ticker symbol prices and update Notion
 		for(i=0;i < databases.length; i++) {
@@ -58,11 +62,13 @@ exports.lambdaHandler = async (event, context) => {
 
 }
 
-
 // Development code
-if(process.env.ENVIRONMENT == "dev") {
-	this.lambdaHandler()
-}
+ENVIRONMENT == 'dev'
+? this.lambdaHandler()
+: console.log(`Environment must be set to dev to run locally`)
+
+
+
 
 
 

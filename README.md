@@ -5,8 +5,8 @@
     <b>Notion&nbsp</b>is an amazing<b>&nbspFinance Tracker</b><br>
     <sub>
         You're already tracking everything else in your<br>
-        life there. Why not your finances, without the<br>
-        manual entry? Now you can with 🔩 <b>Bolt On</b>.
+        life there. Why not your finances? Uh..manual<br>
+        stock price entry? No thanks, use 🔩 <b>Bolt On</b>.
     </sub> 
 </p>
 
@@ -35,5 +35,5 @@ This integration auto-fetches crypto and stock data daily so you can finally tra
 You can get started with Bolt On immediately by creating a new integration with your Notion account here 👇
 - https://www.notion.so/my-integrations
 - Create a new integration (Make sure you are the Admin!)
-- Make sure Read, Update and Insert are all checked under **Content Capabilities**
+- Make sure `Read`, `Update` and `Insert` are all checked under **Content Capabilities**
 - Email me here 👉 mark@markday.me and I'll get you setup!

@@ -2,9 +2,10 @@
 // Remove axios dependency
 const axios = require('axios')
 const { logger, delay } = require('./utils')
-const baseUrl = "https://api.notion.com/v1"
+const BASE_URL = "https://api.notion.com/v1"
+const API_KEY = process.env.NOTION_API_KEY
 const headers = { headers: {
-    Authorization: `Bearer ${process.env.NOTION_API_KEY}`,
+    Authorization: `Bearer ${API_KEY}`,
     'Notion-Version': "2022-06-28"
 }}
 const enabledDatabases = ['crypto', 'stocks']
@@ -22,7 +23,7 @@ const supportedPageProps = ['Ticker', 'Current Price']
 //     return req
 // })
 
-getDatabases = async(pageId = "string") => {
+getDatabases = async(pageId = "") => {
     logger(`Retrieving supported databases...`, { LF: true } )
 
     const data = await _getBlockChildren(pageId)
@@ -115,18 +116,18 @@ _getTickerSymbols = async(databases = []) => {
     return databases
 }
 
-_getBlockChildren = async(blockId = "string") => {
+_getBlockChildren = async(blockId = "") => {
     const { data } = await axios.get(
-        `${baseUrl}/blocks/${blockId}/children`,
+        `${BASE_URL}/blocks/${blockId}/children`,
         headers
     )
 
     return data.results
 }
 
-_getDatabaseEntries = async(databaseId = "string") => {
+_getDatabaseEntries = async(databaseId = "") => {
     const { data } = await axios.post(
-        `${baseUrl}/databases/${databaseId}/query`,
+        `${BASE_URL}/databases/${databaseId}/query`,
         null,
         headers
     )
@@ -136,7 +137,7 @@ _getDatabaseEntries = async(databaseId = "string") => {
 
 _getPagePropertyItem = async(pageId, propId) => {
     const { data } = await axios.get(
-        `${baseUrl}/pages/${pageId}/properties/${decodeURI(propId)}`,
+        `${BASE_URL}/pages/${pageId}/properties/${decodeURI(propId)}`,
         headers
     )
 
@@ -145,7 +146,7 @@ _getPagePropertyItem = async(pageId, propId) => {
 
 _updatePagePropertyItems = async(pageId, props = {}) => {	
 	const { data } = await axios.patch(
-		`${baseUrl}/pages/${pageId}`, {
+		`${BASE_URL}/pages/${pageId}`, {
             properties: props
         },
 		headers
