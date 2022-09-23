@@ -1,4 +1,4 @@
-name: Issue assignment
+name: CI
 
 on:
     issues:

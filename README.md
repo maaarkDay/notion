@@ -12,8 +12,8 @@
 
 
 <p align="center">
-  <img src="https://github.com/maaarkDay/notion/workflows/Node.js%20CI/badge.svg" alt="Node.js CI">
-  <a href="https://opensource.org/licenses/Apache-2.0">
+  <img src="https://github.com/maaarkDay/notion/actions/workflows/main.yml/badge.svg" alt="Issue Assignment">
+  <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
   </a>
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/maaarkDay/notion?color=purple"/>
