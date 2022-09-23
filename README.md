@@ -12,7 +12,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/amplication/amplication/workflows/Node.js%20CI/badge.svg" alt="Node.js CI">
+  <img src="https://github.com/maaarkDay/notion/workflows/Node.js%20CI/badge.svg" alt="Node.js CI">
   <a href="https://opensource.org/licenses/Apache-2.0">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
   </a>
