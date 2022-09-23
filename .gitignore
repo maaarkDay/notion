@@ -25,6 +25,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.env
+node_modules
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -204,11 +206,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Node modules
-node_modules
-
-# Environment variables
-.env
 
 # End of https://www.toptal.com/developers/gitignore/api/osx,node,linux,windows,sam
