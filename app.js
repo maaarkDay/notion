@@ -33,11 +33,12 @@ exports.lambdaHandler = async (event, context) => {
 		const databases = await notion.getDatabases(NOTION_PARENT_PAGE_ID)
 
 		// Update ticker symbol prices and update Notion
-		for(i=0;i < databases.length; i++) {
-			const tickers = databases[i].pages.map(page => page.properties.Ticker.value).filter(x => x)
-			const prices = await router[databases[i].title.toLowerCase()](tickers)
+		for(const database of databases) {
+			// for(i=0;i < databases.length; i++) {
+				const tickers = database.pages.map(page => page.properties.Ticker.value).filter(x => x)
+			const prices = await router[database.title.toLowerCase()](tickers)
 
-			databases[i].pages.forEach(page => {
+			database.pages.forEach(page => {
 				prices.forEach(price => {
 					if(page.properties.Ticker.value == price[0]) return page.properties['Current Price'].usd = price[1]
 				})
